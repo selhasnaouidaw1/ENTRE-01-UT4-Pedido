@@ -52,6 +52,16 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
+         String resul = nombre;
+         System.out.println("NOMBRE: " + nombre);
+         String resul1 = direccion;
+         System.out.println("DIRECCION: " + direccion);
+         String resul2 = ciudad;
+         System.out.println("CIUDAD: " + ciudad);
+         String resul3 = provincia;
+         System.out.println("PROVINCIA: " + provincia);
+         
+         return resul;
          
           
     }
