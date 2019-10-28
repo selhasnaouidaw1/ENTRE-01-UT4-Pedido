@@ -15,37 +15,44 @@ public class Pedido
 
     /**
      * Constructor  
-     */
-    public Pedido()    {
-         
+     */ // y los parametros hay que ponerlos asi siempre 
+    public Pedido(Fecha fecha, Cliente cliente, LineaPedido linea1, LineaPedido linea2)    {
+     this.fecha = fecha;
+     this.cliente= cliente; 
+     this.linea1 = linea1; // pongo this.linea1 porque es al que le asigno el valor
+     this.linea2= linea2;
+        
     }
 
     /**
      * accesor para la fecha del pedido
      */
-    public   getFecha() {
-         
+    public int getFecha() {
+         return fecha;
     }
 
     /**
      * accesor para el cliente
      */
-    public   getCliente() {
-         
+    public String getCliente() {
+         return cliente;
     }
     
     
     /**
      * calcular y devolver el importe total del pedido sin Iva
      */
-    public   getImporteAntesIva() {
+    public double getImporteAntesIva() {
+        
          
     }
 
     /**
      * calcular y devolver el iva a aplicar
      */
-    public   getIva() {
+    public  double getIva() {
+        iva = getImporteAntesIva() * IVA;
+        return iva;
          
     }
 

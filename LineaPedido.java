@@ -39,8 +39,7 @@ public class LineaPedido
      * obtiene una nueva línea de pedido copia idéntica de la actual
      */
     public LineaPedido obtenerCopia() {
-        
-      LineaPedido lp = new LineaPedido(producto.obtenerCopia(), this.cantidad); 
+     LineaPedido lp = new LineaPedido(producto.obtenerCopia(), this.cantidad); 
       return lp;
        
    
