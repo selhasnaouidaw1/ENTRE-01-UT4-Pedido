@@ -43,6 +43,7 @@ public class Pedido
      * calcular y devolver el importe total del pedido sin Iva
      */
     public double getImporteAntesIva() {
+        importe ="";
         
          
     }
@@ -59,7 +60,7 @@ public class Pedido
     /**
      * calcular y devolver el importe total del pedido con Iva
      */
-    public   getImporteTotal() {
+    public double getImporteTotal() {
          
     }
 
@@ -77,14 +78,18 @@ public class Pedido
      * como parámetro
      */
     public boolean masAntiguoQue(Pedido otro) {
+        if (){
+        
+        }
          
     }
     
      /**
      * devuelve una referencia al pedido actual
      */
-    public    getPedidoActual() {
-        
+    public Pedido getPedidoActual() {
+        Pedido p = new Pedido(fecha, cliente, linea1, linea2);
+        return p;
     }
 
 }
