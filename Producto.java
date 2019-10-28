@@ -32,16 +32,26 @@ public class Producto
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
+    public Producto obtenerCopia() {//Pongo Producto para que 
+        //me devuelva un producto.
+         Producto p = new Producto(this.nombre, this.precio);
+         //hace un nuevo producto con el constructor, y en los 
+         //parametros uso el this para decirle que quiero el mismo 
+         //precio y nombre.
+         return p;
          
+       
     }
 
-    /**
-     * Representación textual de un producto
-     * (ver enunciado)
-     */
-    public String toString() {
-        
+        /**
+         * Representación textual de un producto
+         * (ver enunciado)
+         */
+        public String toString() {
+        String str = String.format("%30s |%8.2f€ unidad ", nombre, precio);
+        return str;
+            
+            
     }
 
 }

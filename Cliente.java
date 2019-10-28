@@ -38,39 +38,32 @@ public class Cliente
      * accesor para la ciudad
      */
     public String getCiudad() {
-        return ciudad;
+       return ciudad;
     }
 
     /**
      * accesor para la provincia
      */
     public String getProvincia() {
-        return provincia;
+       return provincia;
     }
 
     /**
      * representación textual del cliente
      */
-    public String toString() {
-         String resul = nombre;
-         System.out.println("NOMBRE: " + nombre);
-         String resul1 = direccion;
-         System.out.println("DIRECCION: " + direccion);
-         String resul2 = ciudad;
-         System.out.println("CIUDAD: " + ciudad);
-         String resul3 = provincia;
-         System.out.println("PROVINCIA: " + provincia);
-         
-         return resul;
-         
-          
+    public String toString() { //revisar lo de -%10s (10 espacios alineados izq)
+       String str = String.format("NOMBRE:%-10s\nDIRECCION:%-10s\nCIUDAD:%-10s\nPROVINCIA:%-10s ", nombre, direccion, ciudad, provincia);
+              
+       return str;
+      
+
     }
-    
+
     /**
      * 
      */
     public void print() {
-        System.out.println(this.toString());
+       System.out.println(this.toString());
     }
 
 }
