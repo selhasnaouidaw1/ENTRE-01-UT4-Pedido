@@ -1,5 +1,4 @@
 
-
 /**
  *  Representa a un cliente que hace un pedido 
  */
@@ -38,32 +37,30 @@ public class Cliente
      * accesor para la ciudad
      */
     public String getCiudad() {
-       return ciudad;
+        return ciudad;
     }
 
     /**
      * accesor para la provincia
      */
     public String getProvincia() {
-       return provincia;
+        return provincia;
     }
 
     /**
      * representación textual del cliente
      */
     public String toString() { //revisar lo de -%10s (10 espacios alineados izq)
-       String str = String.format("NOMBRE:%-10s\nDIRECCION:%-10s\nCIUDAD:%-10s\nPROVINCIA:%-10s ", nombre, direccion, ciudad, provincia);
-              
-       return str;
-      
+        String str = String.format("%10s%-10s\n%10s%-10s\n%10s%-10s\n%10s%-10s\n", "NOMBRE: ", nombre, "DIRECCION: ", direccion, "CIUDAD", ciudad, "PROVINCIA", provincia);
+                
+        return str;
 
     }
-
     /**
      * 
      */
     public void print() {
-       System.out.println(this.toString());
+        System.out.println(this.toString());
     }
 
 }
