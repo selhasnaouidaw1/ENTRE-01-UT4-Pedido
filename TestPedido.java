@@ -11,9 +11,9 @@ public class TestPedido
     /**
      * Constructor  
      */
-    public TestPedido()    {
+    public TestPedido()    {//atasco
         // crear pedido1
-        pedido = new pedido(new Fecha(4, 9, 2019),
+        primerPedido = new pedido(new Fecha(4, 9, 2019),
         new cliente("Juan Soto", "Avda. Pio XII", "Pamplona", "(Navarra)"),
         new LineaPedido
         
@@ -23,7 +23,7 @@ public class TestPedido
 	   
 
         // crear pedido2
-        pedido = new pedido(new Fecha(8, 10, 2019),
+        segundoPedido = new pedido(new Fecha(8, 10, 2019),
         new cliente("Elisa Nuin", "C/ Río Alzania 7", "Pamplona", "(Navarra)"),
         new LineaPedido
          

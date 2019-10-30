@@ -73,10 +73,13 @@ public class Pedido
      * Representación textual del pedido
      * (ver enunciado)
      */
-    // public String toString() {
-        // String str = 
+    public String toString() {//*
+        String str = System.out.printf("FECHA PEDIDO: ",fecha.toString());
+        String str1 = System.out.printf("DATOS DEL CLIENTE: ",cliente.toString());
         
-    // }
+        return str + str1;
+        
+    }
     
     
     /**
