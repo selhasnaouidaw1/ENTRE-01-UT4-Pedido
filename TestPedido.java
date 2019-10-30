@@ -13,12 +13,19 @@ public class TestPedido
      */
     public TestPedido()    {
         // crear pedido1
+        pedido = new pedido(new Fecha(4, 9, 2019),
+        new cliente("Juan Soto", "Avda. Pio XII", "Pamplona", "(Navarra)"),
+        new LineaPedido
+        
        
 	   
 	   
 	   
 
         // crear pedido2
+        pedido = new pedido(new Fecha(8, 10, 2019),
+        new cliente("Elisa Nuin", "C/ Río Alzania 7", "Pamplona", "(Navarra)"),
+        new LineaPedido
          
 
     }
