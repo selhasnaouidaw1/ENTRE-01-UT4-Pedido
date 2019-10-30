@@ -43,8 +43,11 @@ public class Pedido
      * calcular y devolver el importe total del pedido sin Iva
      */
     public double getImporteAntesIva() {
-        importe ="";
-        
+       
+       double producto1 =linea1.getProducto().getPrecio() * linea1.getCantidad();
+       double producto2 = linea2.getProducto().getPrecio() * linea2.getCantidad();
+       resul = producto1 + producto2;
+        return resul;
          
     }
 
@@ -52,8 +55,8 @@ public class Pedido
      * calcular y devolver el iva a aplicar
      */
     public  double getIva() {
-        iva = getImporteAntesIva() * IVA;
-        return iva;
+        return iva = getImporteAntesIva() * IVA;
+        
          
     }
 
@@ -61,16 +64,18 @@ public class Pedido
      * calcular y devolver el importe total del pedido con Iva
      */
     public double getImporteTotal() {
-         
+          tot = getImporteAntesIva() + getIva();
+         return tot;
     }
 
     /**
      * Representación textual del pedido
      * (ver enunciado)
      */
-    public String toString() {
+    // public String toString() {
+        // String str = 
         
-    }
+    // }
     
     
     /**
@@ -78,11 +83,11 @@ public class Pedido
      * como parámetro
      */
     public boolean masAntiguoQue(Pedido otro) {
-        if (){
-        
+        masAntiguo = this.fecha.antesQue(otro.getFecha());
+        return masAntiguo;
         }
          
-    }
+    
     
      /**
      * devuelve una referencia al pedido actual
